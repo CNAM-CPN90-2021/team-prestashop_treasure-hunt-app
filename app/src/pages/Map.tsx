@@ -7,15 +7,15 @@ import {
   IonContent,
   IonPage,
 } from "@ionic/react";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useState } from "react";
 
 export function Map() {
   const [viewport, setViewport] = useState({
-    latitude: 37.7577,
-    longitude: -122.4376,
-    zoom: 8,
+    latitude: 47.7395389333945,
+    longitude: 7.329169414309033,
+    zoom: 12,
   });
   return (
     <IonPage>
@@ -35,7 +35,40 @@ export function Map() {
             onViewportChange={(nextViewport: any) => setViewport(nextViewport)}
             width="100%"
             height="100%"
-          />
+          >
+            <Marker 
+              latitude={47.7395389333945} 
+              longitude={7.329169414309033}
+              offsetLeft={(-1 * 40) /2}
+              offsetTop={(-1 * 40) /2}
+              >
+              <div
+                style={{
+                  background: "red",
+                  width: "40px",
+                  height: "40px",
+                  borderRadius: "50%",
+                }}
+              ></div>
+            </Marker>
+            <Marker 
+              latitude={47.745} 
+              longitude={7.33}
+              offsetLeft={(-1 * 40) /2}
+              offsetTop={(-1 * 40) /2}
+              >
+              <div
+                style={{
+                  background: "blue",
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  border: "white 2px solid",
+                  boxShadow: "0 0 0 15px rgba(0, 0, 255, 0.4)",
+                }}
+              ></div>
+            </Marker>
+          </ReactMapGL>
         </div>
       </IonContent>
     </IonPage>
