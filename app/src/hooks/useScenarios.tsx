@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Scenario } from "../interfaces/Scenario";
+import data from "../datas/scenarios.json";
 
 export const useScenarios = () => {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
@@ -13,9 +14,13 @@ export const useScenarios = () => {
    * Récupère tous les scénarios de l'API
    */
   function getAllScenarios() {
-    fetch("https://<api-domaine-name>/scenarios")
-      .then((response) => response.json())
-      .then((data) => setScenarios(data));
+    // TODO: Cette partie devra être décommentée lorsque l'API sera accessible
+    // fetch("https://<api-domaine-name>/scenarios")
+    //   .then((response) => response.json())
+    //   .then((data) => setScenarios(data));
+    
+    // Récupération provisoire de données en dur
+    setScenarios(data);
   }
 
   return {
