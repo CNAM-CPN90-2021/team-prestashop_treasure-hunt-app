@@ -14,7 +14,7 @@ import "./ScenariosMenu.css";
 
 const ScenariosMenu: React.FC = () => {
   const { scenarios } = useScenarios();
-  
+
   return (
     <IonPage>
       <IonHeader>
@@ -30,9 +30,11 @@ const ScenariosMenu: React.FC = () => {
         </IonHeader>
         <IonGrid>
           <IonRow>
-            <IonCol>
-              <ScenarioMenuItem />
-            </IonCol>
+            {scenarios.map((scenario) => (
+              <IonCol>
+                <ScenarioMenuItem titre={scenario.titre} />
+              </IonCol>
+            ))}
           </IonRow>
         </IonGrid>
       </IonContent>

@@ -1,11 +1,13 @@
-import './ScenarioMenuItem.css';
+import "./ScenarioMenuItem.css";
 
-interface ContainerProps { }
+interface ContainerProps {
+  titre: string;
+}
 
-const ScenarioMenuItem: React.FC<ContainerProps> = () => {
+const ScenarioMenuItem: React.FC<ContainerProps> = ({ titre }) => {
   return (
-    <div >
-      <strong>Scenario</strong>
+    <div>
+      <strong>{titre}</strong>
     </div>
   );
 };
