@@ -9,9 +9,12 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import ScenarioMenuItem from "../components/ScenarioMenuItem";
+import { useScenarios } from "../hooks/useScenarios";
 import "./ScenariosMenu.css";
 
 const ScenariosMenu: React.FC = () => {
+  const { scenarios } = useScenarios();
+  
   return (
     <IonPage>
       <IonHeader>
