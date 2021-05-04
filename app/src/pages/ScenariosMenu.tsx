@@ -1,6 +1,15 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './ScenariosMenu.css';
+import {
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import ScenarioMenuItem from "../components/ScenarioMenuItem";
+import "./ScenariosMenu.css";
 
 const ScenariosMenu: React.FC = () => {
   return (
@@ -16,7 +25,13 @@ const ScenariosMenu: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <IonGrid>
+          <IonRow>
+            <IonCol>
+              <ScenarioMenuItem />
+            </IonCol>
+          </IonRow>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );
