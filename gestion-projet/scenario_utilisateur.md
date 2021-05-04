@@ -6,7 +6,7 @@
 - Créer des données en dur pour développer l'app mobile
 
 # Idée scénario
-- 24 janvier 1904, M Picsou est mort. Les inspecteurs Préjugé et Holmtz sont appelés pour résoudre l'affaire. La veille de la découverte du corp assassiné de M Picsou une dispute a éclaté entre lui est son fils aîné au sujet de la participation de ce dernier à une manifestation de défense des droits des travailleurs. Louise-Françoise le fille cadette de M Picsou a clairement entendu son père menacer son fils de le déshériter si celui-ci participait à cette manifestation. C'est le notaire qui avait rendez-vous avec M Picsou pour une modification du testament qui a découvert dans le bureau le corp transpercé par l'épée de Candide.
+24 janvier 1904, M Picsou est mort. Les inspecteurs Préjugé et Holmtz sont appelés pour résoudre l'affaire. La veille de la découverte du corp assassiné de M Picsou une dispute a éclaté entre lui est son fils aîné au sujet de la participation de ce dernier à une manifestation de défense des droits des travailleurs. Louise-Françoise le fille cadette de M Picsou a clairement entendu son père menacer son fils de le déshériter si celui-ci participait à cette manifestation. C'est le notaire qui avait rendez-vous avec M Picsou pour une modification du testament qui a découvert dans le bureau le corp transpercé par l'épée de Candide.
 
 # Les personnages
 ## Les inspecteurs
