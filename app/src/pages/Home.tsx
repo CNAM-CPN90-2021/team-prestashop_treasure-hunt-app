@@ -1,25 +1,22 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
+import { IonPage ,IonContent , IonButton , IonIcon , IonImg } from "@ionic/react";
+import search from '../images/search.png';
+import './Home.css'
 
-const Home: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
-      </IonContent>
-    </IonPage>
-  );
-};
+const Home : React.FC = () => {
 
+    return(
+        <IonPage>
+        <IonContent  fullscreen>
+            <div className="container_menu1">
+            <IonImg className="searchImg" src= {search} alt="search" />
+            <h2>Prêt à jouer ?</h2>
+            <IonButton fill="clear">Commencer une enquête 
+            <IonIcon name="arrow-forward-outline"></IonIcon>
+            </IonButton>
+            </div>
+        </IonContent>
+        </IonPage>
+    )
+
+}
 export default Home;
