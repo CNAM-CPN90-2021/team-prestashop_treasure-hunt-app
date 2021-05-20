@@ -23,7 +23,7 @@ interface ContainerProps {
 
 const ScenarioMenuItem: React.FC<ContainerProps> = ({ scenario }) => {
   return (
-    <IonCard>
+    <IonCard routerLink={`/story-view/${scenario.id}`}>
       <img src={scenario.imageUrl} />
       <IonCardHeader>
         <IonCardTitle>{scenario.titre}</IonCardTitle>
