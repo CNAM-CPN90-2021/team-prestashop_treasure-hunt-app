@@ -24,6 +24,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import StoryView from "./pages/StoryView";
 
 const App: React.FC = () => (
   <IonApp>
@@ -35,14 +36,15 @@ const App: React.FC = () => (
         <Route exact path="/scenarios-menu">
           <ScenariosMenu />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
         <Route path="/map">
           <Map />
         </Route>
         <Route path="/histoire">
           <Histoire />
+        </Route>
+        <Route path={`$/story-view/:id`} component={StoryView} />
+        <Route exact path="/">
+          <Redirect to="/home" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

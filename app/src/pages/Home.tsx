@@ -12,7 +12,7 @@ const Home : React.FC = () => {
             <div className="container_flex_center">
             <IonImg className="searchImg" src= {search} alt="search" />
             <h2>Prêt à jouer ?</h2>
-            <IonButton fill="clear">Commencer une enquête 
+            <IonButton fill="clear" href="/scenarios-menu">Commencer une enquête 
             <IonIcon name="arrow-forward-outline"></IonIcon>
             </IonButton>
             </div>
