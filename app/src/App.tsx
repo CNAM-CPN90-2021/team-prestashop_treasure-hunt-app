@@ -4,6 +4,7 @@ import { IonReactRouter } from "@ionic/react-router";
 import Home from "./pages/Home";
 import { Map } from "./pages/Map";
 import ScenariosMenu from "./pages/ScenariosMenu";
+import Histoire from "./pages/Histoire"
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -39,6 +40,9 @@ const App: React.FC = () => (
         </Route>
         <Route path="/map">
           <Map />
+        </Route>
+        <Route path="/histoire">
+          <Histoire />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

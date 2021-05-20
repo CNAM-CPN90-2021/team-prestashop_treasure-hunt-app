@@ -1,4 +1,4 @@
-import { IonPage ,IonContent , IonButton , IonIcon , IonImg } from "@ionic/react";
+import { IonPage ,IonContent , IonButton , IonIcon , IonImg, IonToolbar } from "@ionic/react";
 import search from '../images/search.png';
 import './Home.css'
 
@@ -6,8 +6,10 @@ const Home : React.FC = () => {
 
     return(
         <IonPage>
+            <IonToolbar>
+            </IonToolbar>
         <IonContent  fullscreen>
-            <div className="container_menu1">
+            <div className="container_flex_center">
             <IonImg className="searchImg" src= {search} alt="search" />
             <h2>Prêt à jouer ?</h2>
             <IonButton fill="clear">Commencer une enquête 
@@ -15,6 +17,8 @@ const Home : React.FC = () => {
             </IonButton>
             </div>
         </IonContent>
+            <IonToolbar>
+            </IonToolbar>
         </IonPage>
     )
 
