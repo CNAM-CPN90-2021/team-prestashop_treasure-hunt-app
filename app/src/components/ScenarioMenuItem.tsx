@@ -1,14 +1,36 @@
 import "./ScenarioMenuItem.css";
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonCardContent,
+  IonItem,
+  IonIcon,
+  IonLabel,
+  IonButton,
+} from "@ionic/react";
+import { Scenario } from "../interfaces/Scenario";
 
 interface ContainerProps {
-  titre: string;
+  scenario: Scenario;
 }
 
-const ScenarioMenuItem: React.FC<ContainerProps> = ({ titre }) => {
+const ScenarioMenuItem: React.FC<ContainerProps> = ({ scenario }) => {
   return (
-    <div>
-      <strong>{titre}</strong>
-    </div>
+    <IonCard>
+      <img src={scenario.imageUrl} />
+      <IonCardHeader>
+        <IonCardTitle>{scenario.titre}</IonCardTitle>
+      </IonCardHeader>
+
+      <IonCardContent>{scenario.description}</IonCardContent>
+    </IonCard>
   );
 };
 
