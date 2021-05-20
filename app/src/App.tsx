@@ -34,11 +34,11 @@ const App: React.FC = () => (
         <Route exact path="/scenarios-menu">
           <ScenariosMenu />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
         <Route path="/map">
           <Map />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home"/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
