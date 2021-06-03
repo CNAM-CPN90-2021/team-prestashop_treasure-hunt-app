@@ -6,4 +6,4 @@ export interface Scenario {
     description?: string,
     imageUrl?: string,
     etapes?: Etapes
-}
+}   

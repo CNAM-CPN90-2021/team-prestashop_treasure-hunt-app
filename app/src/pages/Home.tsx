@@ -1,6 +1,7 @@
 import { IonPage ,IonContent , IonButton , IonIcon , IonImg, IonToolbar } from "@ionic/react";
 import search from '../images/search.png';
 import './Home.css'
+import Entrance from './Entrance'
 
 const Home : React.FC = () => {
 
@@ -15,6 +16,7 @@ const Home : React.FC = () => {
             <IonButton fill="clear" href="/scenarios-menu">Commencer une enquête 
             <IonIcon name="arrow-forward-outline"></IonIcon>
             </IonButton>
+            <Entrance />
             </div>
         </IonContent>
             <IonToolbar>
