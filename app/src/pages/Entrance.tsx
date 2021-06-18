@@ -1,6 +1,8 @@
 import { IonButton, useIonToast } from "@ionic/react";
 import { useQRCodeScanner } from "../hooks/useQRCodeScanner";
 
+// this component just for testing QRcode Functionality 
+
 function Entrance() {
   const { startScan } = useQRCodeScanner();
   const [showToast] = useIonToast();

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Scenario } from "../interfaces/Scenario";
-import data from "../datas/scenarios.json";
+import data from "../datas/dataStructureModule.json";
 
 export const useScenarios = () => {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
@@ -20,6 +20,7 @@ export const useScenarios = () => {
     //   .then((data) => setScenarios(data));
     
     // Récupération provisoire de données en dur
+    // console.log(data)
     setScenarios(data);
   }
 

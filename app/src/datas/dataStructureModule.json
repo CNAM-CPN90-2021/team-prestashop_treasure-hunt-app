@@ -1,0 +1,103 @@
+[
+    {
+      "scenario_id": 1,
+      "scenario_titre": "Qui a vermifugé l'abribus ?",
+      "scenario_description": "Une enquête intense",
+      "scenario_content" :
+          {
+              "titre" : "Qui a vermifugé l'abribus ?",
+              "content" : "Une enquête intense",
+              "image" : "https://cdn-s-www.lalsace.fr/images/9DB2DFFB-1790-43C6-A695-AC767382BDF4/NW_raw/l-arret-de-bus-en-question-est-situe-rue-robert-guth-photo-dna-juliette-mariage-1567084399.jpg" 
+              }
+     ,
+
+      "etape": [
+          {
+            "etape_id" : 1,
+            "étape_titre" : "etape1",
+            "etape_disc" : "bla bla bla",
+            "etape_status" : 0,
+
+            "plot": [
+                {
+                    "plot_id" : 1,
+                    "plot_titre" : "plot1",
+                    "briques" : [
+                        {
+                            "brique_id": "1",
+                            "brique_titre" : "brique 1",
+                            "brique_type" : "QR code",
+                            "brique_content" : "le résultat de scanner le QR code"
+                        },
+                        {
+                            "brique_id": "5",
+                            "brique_titre" : "brique 5",
+                            "brique_type" : "img",
+                            "brique_content" : "url de l'image"
+                        },
+                        {
+                            "brique_id": "6",
+                            "brique_titre" : "brique 6",
+                            "brique_type" : "text",
+                            "brique_content" : "lorem ipsum is just a text"
+                        }
+                        
+                    ]
+                }
+            ]
+          }
+        
+      ]
+    },
+
+    {
+      "scenario_id": 2,
+      "scenario_titre": "Le meurtre du Paris-Tourcoing",
+      "scenario_description": "Une promenade au pays du maroille",
+      "scenario_content" :
+        {
+            "titre" : "Le meurtre du Paris-Tourcoing",
+            "content" : "Une promenade au pays du maroille",
+            "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/TER_200_driving_trailer.jpg/1200px-TER_200_driving_trailer.jpg" 
+
+        }
+    ,
+
+      "etape": [
+        {
+          "etape_id" : 2,
+          "étape_titre" : "etape2",
+          "etape_disc" : "bla bla bla",
+          "etape_status" : 0,
+          "plot": [
+              {
+                  "plot_id" : 2,
+                  "plot_titre" : "plot2",
+                  "briques" : [
+                      {
+                          "brique_id": "2",
+                          "brique_titre" : "brique 2",
+                          "brique_type" : "QR code",
+                          "brique_content" : "le résultat de scanner le QR code"
+                      },
+                      {
+                        "brique_id": "3",
+                        "brique_titre" : "brique 3",
+                        "brique_type" : "img",
+                        "brique_content" : "url de l'image"
+                    },
+                    {
+                        "brique_id": "4",
+                        "brique_titre" : "brique 4",
+                        "brique_type" : "text",
+                        "brique_content" : "lorem ipsum is just a text"
+                    }
+                  ]
+              }
+          ]
+        }
+      
+      ]
+    }
+]
+  
