@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { Map } from "./pages/Map";
 import ScenariosMenu from "./pages/ScenariosMenu";
 import Histoire from "./pages/Histoire"
+import StoryView from "./pages/StoryView";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -24,28 +25,29 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import StoryView from "./pages/StoryView";
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/scenarios-menu">
-          <ScenariosMenu />
-        </Route>
-        <Route path="/map">
-          <Map />
-        </Route>
-        <Route path="/histoire">
-          <Histoire />
-        </Route>
-        <Route path={`$/story-view/:id`} component={StoryView} />
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+
+       {/* Route Home */}
+        <Route exact path={["/home" , "/"]} component={Home} />
+
+       {/* Route scenarios-menu */}
+        <Route exact path="/scenarios-menu" component={ScenariosMenu} />
+
+        {/* Route map */}
+        <Route path="/map" component={Map}/>
+
+       {/* Route histoire */}
+        <Route path="/histoire" component={Histoire} />
+  
+
+        {/* Route story-view */}
+        <Route path={`/story-view/:id`} component={StoryView} />
+
+
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
