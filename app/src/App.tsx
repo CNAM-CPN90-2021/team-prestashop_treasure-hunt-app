@@ -4,7 +4,6 @@ import { IonReactRouter } from "@ionic/react-router";
 import Home from "./pages/Home";
 import { Map } from "./pages/Map";
 import ScenariosMenu from "./pages/ScenariosMenu";
-import Histoire from "./pages/Histoire"
 import StoryView from "./pages/StoryView";
 
 /* Core CSS required for Ionic components to work properly */
@@ -25,6 +24,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import StepsView from "./pages/StepsView";
 
 const App: React.FC = () => (
   <IonApp>
@@ -39,14 +39,13 @@ const App: React.FC = () => (
 
         {/* Route map */}
         <Route path="/map" component={Map}/>
-
-       {/* Route histoire */}
-        <Route path="/histoire" component={Histoire} />
   
 
         {/* Route story-view */}
         <Route path={`/story-view/:id`} component={StoryView} />
 
+        {/* Route story-view */}
+        <Route path={`/story-view/:id/Steps`} component={StepsView} />
 
       </IonRouterOutlet>
     </IonReactRouter>

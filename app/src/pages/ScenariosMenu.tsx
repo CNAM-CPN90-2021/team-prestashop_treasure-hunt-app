@@ -7,6 +7,8 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
+  IonButtons,
+  IonBackButton,
 } from "@ionic/react";
 import ScenarioMenuItem from "../components/ScenarioMenuItem";
 import { useScenarios } from "../hooks/useScenarios";
@@ -19,6 +21,9 @@ const ScenariosMenu: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+        <IonButtons slot="start">
+                <IonBackButton defaultHref="/" />
+            </IonButtons>
           <IonTitle>Scénarios</IonTitle>
         </IonToolbar>
       </IonHeader>
