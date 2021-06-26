@@ -14,14 +14,14 @@ export const useScenarios = () => {
    * Récupère tous les scénarios de l'API
    */
   function getAllScenarios() {
-    // TODO: Cette partie devra être décommentée lorsque l'API sera accessible
-    // fetch("https://<api-domaine-name>/scenarios")
-    //   .then((response) => response.json())
-    //   .then((data) => setScenarios(data));
-    
+    //TODO: "Cette partie devra être décommentée lorsque l'API sera accessible";
+    fetch("http://localhost:8080/Listscenarios")
+      .then((response) => response.json())
+      .then((data) => setScenarios(data));
+    console.log(scenarios);
     // Récupération provisoire de données en dur
     // console.log(data)
-    setScenarios(data);
+    // setScenarios(data);
   }
 
   return {

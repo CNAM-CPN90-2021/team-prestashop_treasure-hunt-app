@@ -1,103 +1,157 @@
 [
     {
-      "scenario_id": 1,
-      "scenario_titre": "Qui a vermifugé l'abribus ?",
-      "scenario_description": "Une enquête intense",
-      "scenario_content" :
-          {
-              "titre" : "Qui a vermifugé l'abribus ?",
-              "content" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam corrupti sit officia eveniet, sunt quasi voluptatibus dignissimos, illo, sapiente eligendi quis. Nemo fugit quasi soluta atque tenetur commodi. Accusantium, saepe?",
-              "image" : "https://cdn-s-www.lalsace.fr/images/9DB2DFFB-1790-43C6-A695-AC767382BDF4/NW_raw/l-arret-de-bus-en-question-est-situe-rue-robert-guth-photo-dna-juliette-mariage-1567084399.jpg" 
-              }
-     ,
-
-      "etape": [
-          {
-            "etape_id" : 1,
-            "étape_titre" : "etape1",
-            "etape_disc" : "bla bla bla",
-            "etape_status" : 0,
-
-            "plot": [
-                {
-                    "plot_id" : 1,
-                    "plot_titre" : "plot1",
-                    "briques" : [
-                        {
-                            "brique_id": "1",
-                            "brique_titre" : "brique 1",
-                            "brique_type" : "QR code",
-                            "brique_content" : "le résultat de scanner le QR code"
-                        },
-                        {
-                            "brique_id": "5",
-                            "brique_titre" : "brique 5",
-                            "brique_type" : "img",
-                            "brique_content" : "url de l'image"
-                        },
-                        {
-                            "brique_id": "6",
-                            "brique_titre" : "brique 6",
-                            "brique_type" : "text",
-                            "brique_content" : "lorem ipsum is just a text"
-                        }
-                        
-                    ]
-                }
-            ]
-          }
-        
-      ]
-    },
-
-    {
-      "scenario_id": 2,
-      "scenario_titre": "Le meurtre du Paris-Tourcoing",
-      "scenario_description": "Une promenade au pays du maroille",
-      "scenario_content" :
-        {
-            "titre" : "Le meurtre du Paris-Tourcoing",
-            "content" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam corrupti sit officia eveniet, sunt quasi voluptatibus dignissimos, illo, sapiente eligendi quis. Nemo fugit quasi soluta atque tenetur commodi. Accusantium, saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam corrupti sit officia eveniet, sunt quasi voluptatibus dignissimos, illo, sapiente eligendi quis. Nemo fugit quasi soluta atque tenetur commodi. Accusantium, saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam corrupti sit officia eveniet, sunt quasi voluptatibus dignissimos, illo, sapiente eligendi quis. Nemo fugit quasi soluta atque tenetur commodi. Accusantium, saepe?",
-            "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/TER_200_driving_trailer.jpg/1200px-TER_200_driving_trailer.jpg" 
-
-        }
-    ,
-
-      "etape": [
-        {
-          "etape_id" : 2,
-          "étape_titre" : "etape2",
-          "etape_disc" : "bla bla bla",
-          "etape_status" : 0,
-          "plot": [
-              {
-                  "plot_id" : 2,
-                  "plot_titre" : "plot2",
-                  "briques" : [
-                      {
-                          "brique_id": "2",
-                          "brique_titre" : "brique 2",
-                          "brique_type" : "QR code",
-                          "brique_content" : "le résultat de scanner le QR code"
-                      },
-                      {
-                        "brique_id": "3",
-                        "brique_titre" : "brique 3",
-                        "brique_type" : "img",
-                        "brique_content" : "url de l'image"
+        "scenario_id": 1,
+        "scenario_titre": "Qui a vermifugé l'abribus ?",
+        "scenario_description": "Une enquête intense",
+        "etape": [
+            {
+                "etape_id": 1,
+                "etape_titre": "Présentation de l'enquète",
+                "etape_status": false,
+                "etape_description": "Cette étape raconte la situation intiale de l'enquête",
+                "plot": [
+                    {
+                        "plot_id": 1,
+                        "plot_titre": "Histoire 1",
+                        "plot_description": "Histoire 1",
+                        "plot_type": "INTERLUDE",
+                        "brique": [
+                            {
+                                "brique_id": 1,
+                                "brique_titre": "Texte Histoire 1",
+                                "brique_type": "TEXTE",
+                                "briqueTexte_contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "brique_id": 1,
+                                "brique_titre": "Image Histoire 1",
+                                "briqueImage_urlImage": "http://url.com",
+                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                            }
+                        ]
                     },
                     {
-                        "brique_id": "4",
-                        "brique_titre" : "brique 4",
-                        "brique_type" : "text",
-                        "brique_content" : "lorem ipsum is just a text"
+                        "plot_id": 1,
+                        "plot_titre": "Histoire 2",
+                        "plot_description": "Histoire 2",
+                        "plot_type": "INTERLUDE",
+                        "brique": [
+                            {
+                                "brique_id": 1,
+                                "brique_titre": "Texte Histoire 2",
+                                "brique_type": "TEXTE",
+                                "briqueTexte_contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "brique_id": 1,
+                                "brique_titre": "Image Histoire 2",
+                                "briqueImage_urlImage": "http://url.com",
+                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                            }
+                        ]
                     }
-                  ]
-              }
-          ]
-        }
-      
-      ]
+                ]
+            },
+            {
+                "etape_id": 2,
+                "etape_titre": "Suspect 1",
+                "etape_status": false,
+                "etape_description": "Dans cette étape vous rencontrer le premier suspect",
+                "plot": [
+                    {
+                        "plot_id": 3,
+                        "plot_titre": "Description du suspect",
+                        "plot_description": "Description du suspect",
+                        "plot_type": "INTERLUDE",
+                        "brique": [
+                            {
+                                "brique_id": 5,
+                                "brique_titre": "Texte Suspect 1",
+                                "brique_type": "TEXTE",
+                                "briqueTexte_contenuHtml": "<p>Texte du suspect 1<p>"
+                            },
+                            {
+                                "brique_id": 6,
+                                "brique_titre": "Image Suspect 1",
+                                "briqueImage_urlImage": "http://url.com",
+                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                            }
+                        ]
+                    },
+                    {
+                        "plot_id": 4,
+                        "plot_titre": "Recherche d'indice",
+                        "plot_description": "",
+                        "plot_type": "QUESTION",
+                        "brique": [
+                            {
+                                "brique_id": 7,
+                                "brique_titre": "Texte Histoire 2",
+                                "brique_type": "QR"
+                            }
+                        ]
+                    },
+                    {
+                        "plot_id": 5,
+                        "plot_titre": "Reponse indice 1",
+                        "plot_description": "",
+                        "plot_type": "REPONSE_JUSTE",
+                        "brique": [
+                            {
+                                "brique_id": 7,
+                                "brique_titre": "Description indice 1",
+                                "brique_type": "Texte",
+                                "brique_contenuHtml": "<p>Contenu de l'indice<p>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "scenario_id": 2,
+        "scenario_titre": "Le meurtre du Paris-Tourcoing",
+        "scenario_description": "Une promenade au pays du maroille",
+        "scenario_content": {
+            "titre": "Le meurtre du Paris-Tourcoing",
+            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam corrupti sit officia eveniet, sunt quasi voluptatibus dignissimos, illo, sapiente eligendi quis. Nemo fugit quasi soluta atque tenetur commodi. Accusantium, saepe?",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/TER_200_driving_trailer.jpg/1200px-TER_200_driving_trailer.jpg"
+        },
+        "etape": [
+            {
+                "etape_id": 2,
+                "etape_titre": "etape2",
+                "etape_status": false,
+                "etape_description": "string",
+                "plot": [
+                    {
+                        "plot_id": 2,
+                        "plot_titre": "plot2",
+                        "plot_type": "INTERLUDE",
+                        "briques": [
+                            {
+                                "brique_id": "2",
+                                "brique_titre": "brique 2",
+                                "brique_type": "QR code",
+                                "brique_content": "le résultat de scanner le QR code"
+                            },
+                            {
+                                "brique_id": "3",
+                                "brique_titre": "brique 3",
+                                "brique_type": "img",
+                                "brique_content": "url de l'image"
+                            },
+                            {
+                                "brique_id": "4",
+                                "brique_titre": "brique 4",
+                                "brique_type": "text",
+                                "brique_content": "lorem ipsum is just a text"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]
-  
