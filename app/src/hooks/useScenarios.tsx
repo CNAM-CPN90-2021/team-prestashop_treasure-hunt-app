@@ -14,17 +14,39 @@ export const useScenarios = () => {
    * Récupère tous les scénarios de l'API
    */
   function getAllScenarios() {
-    //TODO: "Cette partie devra être décommentée lorsque l'API sera accessible";
-    fetch("http://localhost:8080/Listscenarios")
-      .then((response) => response.json())
+    fetch("http://localhost:8080/scenarioListJson")
+      .then((response) => {
+        return response.json();
+      })
       .then((data) => setScenarios(data));
-    console.log(scenarios);
     // Récupération provisoire de données en dur
     // console.log(data)
     // setScenarios(data);
   }
 
+  /**
+   * Filtre les scénarios pour retourner celui qui correspond à l'id
+   * @param id - identifiant unique
+   * @returns 
+   */
+  function filterById(id: number): Scenario {
+    console.log("id", id);
+    let scenarioById: Scenario = {
+      id: 0,
+      titre: "default title"
+    }
+    if (scenarios != null) {
+      scenarios.find((scenario) => {
+        if (scenario.id === id) {
+          scenarioById = scenario;
+        }
+      });
+    }
+    return scenarioById;
+  }
+
   return {
+    filterById,
     scenarios,
   };
 };

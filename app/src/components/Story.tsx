@@ -2,9 +2,9 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonGrid, 
 
 
 interface story {
-    src : string;
+    src?: string;
     title :string;
-    content : string;
+    content? : string;
 }
 
 const Story : React.FC<story> = ({src , title , content}) => {

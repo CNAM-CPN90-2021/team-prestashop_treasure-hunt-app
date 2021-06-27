@@ -36,7 +36,7 @@ const ScenariosMenu: React.FC = () => {
         <IonGrid>
           <IonRow>
             {scenarios.map((scenario) => (
-              <IonCol key={scenario.scenario_id}>
+              <IonCol key={scenario.id}>
                 <ScenarioMenuItem scenario={scenario}/>
               </IonCol>
             ))}
