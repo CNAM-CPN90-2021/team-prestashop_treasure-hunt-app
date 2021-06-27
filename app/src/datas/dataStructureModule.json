@@ -1,8 +1,9 @@
 [
     {
-        "scenario_id": 1,
-        "scenario_titre": "Qui a vermifugé l'abribus ?",
-        "scenario_description": "Une enquête intense",
+        "id": 1,
+        "titre": "Qui a vermifugé l'abribus ?",
+        "description": "Une enquête intense",
+        "imageUrl": "https://cdn-s-www.lalsace.fr/images/9DB2DFFB-1790-43C6-A695-AC767382BDF4/NW_raw/l-arret-de-bus-en-question-est-situe-rue-robert-guth-photo-dna-juliette-mariage-1567084399.jpg",
         "etape": [
             {
                 "etape_id": 1,
@@ -102,51 +103,6 @@
                                 "brique_titre": "Description indice 1",
                                 "brique_type": "Texte",
                                 "brique_contenuHtml": "<p>Contenu de l'indice<p>"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "scenario_id": 2,
-        "scenario_titre": "Le meurtre du Paris-Tourcoing",
-        "scenario_description": "Une promenade au pays du maroille",
-        "scenario_content": {
-            "titre": "Le meurtre du Paris-Tourcoing",
-            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam corrupti sit officia eveniet, sunt quasi voluptatibus dignissimos, illo, sapiente eligendi quis. Nemo fugit quasi soluta atque tenetur commodi. Accusantium, saepe?",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/TER_200_driving_trailer.jpg/1200px-TER_200_driving_trailer.jpg"
-        },
-        "etape": [
-            {
-                "etape_id": 2,
-                "etape_titre": "etape2",
-                "etape_status": false,
-                "etape_description": "string",
-                "plot": [
-                    {
-                        "plot_id": 2,
-                        "plot_titre": "plot2",
-                        "plot_type": "INTERLUDE",
-                        "briques": [
-                            {
-                                "brique_id": "2",
-                                "brique_titre": "brique 2",
-                                "brique_type": "QR code",
-                                "brique_content": "le résultat de scanner le QR code"
-                            },
-                            {
-                                "brique_id": "3",
-                                "brique_titre": "brique 3",
-                                "brique_type": "img",
-                                "brique_content": "url de l'image"
-                            },
-                            {
-                                "brique_id": "4",
-                                "brique_titre": "brique 4",
-                                "brique_type": "text",
-                                "brique_content": "lorem ipsum is just a text"
                             }
                         ]
                     }

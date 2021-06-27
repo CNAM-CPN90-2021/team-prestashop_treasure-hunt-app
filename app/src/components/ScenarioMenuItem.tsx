@@ -23,12 +23,12 @@ interface ContainerProps {
 
 const ScenarioMenuItem: React.FC<ContainerProps> = ({ scenario }) => {
   return (
-    <IonCard  routerLink={`/story-view/${scenario.scenario_id}`}>
-      <img src={scenario.scenario_content.image} alt={scenario.scenario_content.titre} />
+    <IonCard  routerLink={`/story-view/${scenario.id}`}>
+      <img src={scenario.imageUrl} alt={scenario.titre} />
       <IonCardHeader>
-        <IonCardTitle>{scenario.scenario_content.titre}</IonCardTitle>
+        <IonCardTitle>{scenario.titre}</IonCardTitle>
       </IonCardHeader>
-      <IonCardContent>{scenario.scenario_description}</IonCardContent>
+      <IonCardContent>{scenario.description}</IonCardContent>
     </IonCard>
     
   );
