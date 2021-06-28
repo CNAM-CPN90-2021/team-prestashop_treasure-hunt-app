@@ -1,108 +1,313 @@
-[
-    {
+[{
         "id": 1,
-        "titre": "Qui a vermifugé l'abribus ?",
-        "description": "Une enquête intense",
-        "imageUrl": "https://cdn-s-www.lalsace.fr/images/9DB2DFFB-1790-43C6-A695-AC767382BDF4/NW_raw/l-arret-de-bus-en-question-est-situe-rue-robert-guth-photo-dna-juliette-mariage-1567084399.jpg",
-        "etape": [
-            {
-                "etape_id": 1,
-                "etape_titre": "Présentation de l'enquète",
-                "etape_status": false,
-                "etape_description": "Cette étape raconte la situation intiale de l'enquête",
-                "plot": [
-                    {
-                        "plot_id": 1,
-                        "plot_titre": "Histoire 1",
-                        "plot_description": "Histoire 1",
-                        "plot_type": "INTERLUDE",
-                        "brique": [
-                            {
-                                "brique_id": 1,
-                                "brique_titre": "Texte Histoire 1",
-                                "brique_type": "TEXTE",
-                                "briqueTexte_contenuHtml": "<p>Texte de l'histoire<p>"
+        "titre": "Scenario 1",
+        "description": "Description scénario 1",
+        "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/8/2/182c0cf196_50167185_proprietaire-chat-min.jpg",
+        "etapes": [{
+                "id": 1,
+                "titre": "Titre Etape 1",
+                "description": "description etape 1",
+                "plots": [{
+                        "id": 1,
+                        "titre": "Titre Plot 1",
+                        "description": "Description plot 1",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "Titre Brique 1",
+                                "description": "Decription brique 1",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
                             },
                             {
-                                "brique_id": 1,
-                                "brique_titre": "Image Histoire 1",
-                                "briqueImage_urlImage": "http://url.com",
-                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                                "id": 2,
+                                "titre": "Titre Brique 2",
+                                "description": "Decription brique 2",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 2"
                             }
                         ]
                     },
                     {
-                        "plot_id": 1,
-                        "plot_titre": "Histoire 2",
-                        "plot_description": "Histoire 2",
-                        "plot_type": "INTERLUDE",
-                        "brique": [
-                            {
-                                "brique_id": 1,
-                                "brique_titre": "Texte Histoire 2",
-                                "brique_type": "TEXTE",
-                                "briqueTexte_contenuHtml": "<p>Texte de l'histoire<p>"
+                        "id": 1,
+                        "titre": "Titre Plot 2",
+                        "description": "Descritpion plot 2",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 3,
+                                "titre": "Titre Brique 3",
+                                "description": "Decription brique 3",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
                             },
                             {
-                                "brique_id": 1,
-                                "brique_titre": "Image Histoire 2",
-                                "briqueImage_urlImage": "http://url.com",
-                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                                "id": 4,
+                                "titre": "Titre Brique 4",
+                                "description": "Decription brique 4",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 4"
                             }
                         ]
                     }
                 ]
             },
             {
-                "etape_id": 2,
-                "etape_titre": "Suspect 1",
-                "etape_status": false,
-                "etape_description": "Dans cette étape vous rencontrer le premier suspect",
-                "plot": [
-                    {
-                        "plot_id": 3,
-                        "plot_titre": "Description du suspect",
-                        "plot_description": "Description du suspect",
-                        "plot_type": "INTERLUDE",
-                        "brique": [
-                            {
-                                "brique_id": 5,
-                                "brique_titre": "Texte Suspect 1",
-                                "brique_type": "TEXTE",
-                                "briqueTexte_contenuHtml": "<p>Texte du suspect 1<p>"
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "plots": [{
+                        "id": 3,
+                        "titre": "Titre Plot 3",
+                        "description": "Description plot 3",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 5,
+                                "titre": "Titre Brique 5",
+                                "description": "Decription brique 5",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
                             },
                             {
-                                "brique_id": 6,
-                                "brique_titre": "Image Suspect 1",
-                                "briqueImage_urlImage": "http://url.com",
-                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                                "id": 6,
+                                "titre": "Titre Brique 6",
+                                "description": "Decription brique 6",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 6"
                             }
                         ]
                     },
                     {
-                        "plot_id": 4,
-                        "plot_titre": "Recherche d'indice",
-                        "plot_description": "",
-                        "plot_type": "QUESTION",
-                        "brique": [
+                        "id": 4,
+                        "titre": "Titre Plot 4",
+                        "description": "Descritpion plot 2",
+                        "type": "QUESTION",
+                        "briques": [{
+                                "id": 7,
+                                "titre": "Titre Brique 7",
+                                "description": "Decription brique 7",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            },
                             {
-                                "brique_id": 7,
-                                "brique_titre": "Texte Histoire 2",
-                                "brique_type": "QR"
+                                "id": 8,
+                                "titre": "Titre Brique 8",
+                                "description": "Decription brique 8",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "titre": "Scenario 2",
+        "description": "Description scénario 2",
+        "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/5/8/858743bb35_50169458_chien-min.jpg",
+        "etapes": [{
+                "id": 1,
+                "titre": "Titre Etape 1",
+                "description": "description etape 1",
+                "plots": [{
+                        "id": 1,
+                        "titre": "Titre Plot 1",
+                        "description": "Description plot 1",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "Titre Brique 1",
+                                "description": "Decription brique 1",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "Titre Brique 2",
+                                "description": "Decription brique 2",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 2"
                             }
                         ]
                     },
                     {
-                        "plot_id": 5,
-                        "plot_titre": "Reponse indice 1",
-                        "plot_description": "",
-                        "plot_type": "REPONSE_JUSTE",
-                        "brique": [
+                        "id": 1,
+                        "titre": "Titre Plot 2",
+                        "description": "Descritpion plot 2",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 3,
+                                "titre": "Titre Brique 3",
+                                "description": "Decription brique 3",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
                             {
-                                "brique_id": 7,
-                                "brique_titre": "Description indice 1",
-                                "brique_type": "Texte",
-                                "brique_contenuHtml": "<p>Contenu de l'indice<p>"
+                                "id": 4,
+                                "titre": "Titre Brique 4",
+                                "description": "Decription brique 4",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "plots": [{
+                        "id": 3,
+                        "titre": "Titre Plot 3",
+                        "description": "Description plot 3",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 5,
+                                "titre": "Titre Brique 5",
+                                "description": "Decription brique 5",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 6,
+                                "titre": "Titre Brique 6",
+                                "description": "Decription brique 6",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 6"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "titre": "Titre Plot 4",
+                        "description": "Descritpion plot 2",
+                        "type": "QUESTION",
+                        "briques": [{
+                                "id": 7,
+                                "titre": "Titre Brique 7",
+                                "description": "Decription brique 7",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            },
+                            {
+                                "id": 8,
+                                "titre": "Titre Brique 8",
+                                "description": "Decription brique 8",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, {
+        "id": 3,
+        "titre": "Scenario 3",
+        "description": "Description scénario 3",
+        "imageUrl": "data:image/jpeg;base64,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",
+        "etapes": [{
+                "id": 1,
+                "titre": "Titre Etape 1",
+                "description": "description etape 1",
+                "plots": [{
+                        "id": 1,
+                        "titre": "Titre Plot 1",
+                        "description": "Description plot 1",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "Titre Brique 1",
+                                "description": "Decription brique 1",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "Titre Brique 2",
+                                "description": "Decription brique 2",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 2"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "titre": "Titre Plot 2",
+                        "description": "Descritpion plot 2",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 3,
+                                "titre": "Titre Brique 3",
+                                "description": "Decription brique 3",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 4,
+                                "titre": "Titre Brique 4",
+                                "description": "Decription brique 4",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "plots": [{
+                        "id": 3,
+                        "titre": "Titre Plot 3",
+                        "description": "Description plot 3",
+                        "type": "INTERLUDE",
+                        "briques": [{
+                                "id": 5,
+                                "titre": "Titre Brique 5",
+                                "description": "Decription brique 5",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 6,
+                                "titre": "Titre Brique 6",
+                                "description": "Decription brique 6",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 6"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "titre": "Titre Plot 4",
+                        "description": "Descritpion plot 2",
+                        "type": "QUESTION",
+                        "briques": [{
+                                "id": 7,
+                                "titre": "Titre Brique 7",
+                                "description": "Decription brique 7",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            },
+                            {
+                                "id": 8,
+                                "titre": "Titre Brique 8",
+                                "description": "Decription brique 8",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
                             }
                         ]
                     }
