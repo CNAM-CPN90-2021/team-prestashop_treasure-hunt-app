@@ -1,6 +1,8 @@
-import { IonPage, IonToolbar, IonContent, IonGrid, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonRow, IonImg, IonCol, IonButtons, IonBackButton, IonHeader, IonTitle, IonFooter, } from "@ionic/react"
-import { RouteComponentProps, useParams } from "react-router"
-import CustomButton from "../components/CustomButton"
+import { IonPage, IonContent} from "@ionic/react"
+import { RouteComponentProps } from "react-router"
+import Container from "../components/Container"
+import PagesFooter from "../components/PagesFooter"
+import PagesHeader from "../components/PagesHeader"
 import Story from "../components/Story"
 // import data from "../datas/dataStructureModule.json"
 import { useScenarios } from "../hooks/useScenarios"
@@ -18,33 +20,22 @@ const StoryView: React.FC<StoryDetailPageProps> = ({ match }) => {
     // filtering the data for display the record by ID
     const { filterById } = useScenarios();
     const currentScenario: Scenario = filterById(parseInt(match.params.id))
-    console.log("currentScenario", currentScenario);
-    //   const scenarioPath = scenario[0].content
 
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonButtons slot="start">
-                        <IonBackButton defaultHref="/scenarios-menu" />
-                    </IonButtons>
-                    <IonTitle>{currentScenario.titre}</IonTitle>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent>
+            {/* component page header src : component/PagesHeader.tsx */}
+            <PagesHeader pageTitle = {currentScenario.titre} hrefBackButton = "/scenarios-menu" />
+
+                {/* component container  src : component/Container.tsx */}
+                <Container>
+
+                {/* component Story  src : component/Story.tsx */}
                 <Story src={currentScenario.imageUrl} title={currentScenario.titre} content={currentScenario.description} />
-            </IonContent>
-            <IonFooter>
-                <IonToolbar>
-                    <IonGrid className="container_flex_center">
-                        <IonRow>
-                            <IonCol>
-                                <CustomButton ButtonHref={`${match.url}/Steps`} ButtonText="Commencer l'enquête" />
-                            </IonCol>
-                        </IonRow>
-                    </IonGrid>
-                </IonToolbar>
-            </IonFooter>
+
+                </Container>
+             {/* component PagesFooter  src : component/PagesFooter.tsx */}
+            <PagesFooter hrefButton={`${match.url}/Steps`}  textButton={"Commencer l'enquête"} />
+
         </IonPage>
     )
 }

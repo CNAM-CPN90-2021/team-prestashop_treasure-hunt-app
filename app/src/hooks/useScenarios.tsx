@@ -22,7 +22,7 @@ export const useScenarios = () => {
     //   })
     //   .then((data) => setScenarios(data));
     // Récupération provisoire de données en dur
-    console.log(data);
+    // console.log(data);
     setScenarios(data);
   }
 
@@ -32,7 +32,7 @@ export const useScenarios = () => {
    * @returns 
    */
   function filterById(id: number): Scenario {
-    console.log("id", id);
+    // console.log("id", id);
     let scenarioById: Scenario = {
       id: 0,
       titre: "",
