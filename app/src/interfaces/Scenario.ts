@@ -4,8 +4,8 @@ import { ScenarioContent } from "./ScenarioContent";
 export interface Scenario {
     id: number;
     titre: string;
-    description?: string;
+    description: string;
     imageUrl?: string;
-    content?: ScenarioContent;
-    etape?: Etape[];
+    // content?: ScenarioContent;
+    etapes: Etape[];
 }

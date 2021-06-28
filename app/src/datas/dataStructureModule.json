@@ -1,108 +1,223 @@
 [
     {
         "id": 1,
-        "titre": "Qui a vermifugé l'abribus ?",
-        "description": "Une enquête intense",
-        "imageUrl": "https://cdn-s-www.lalsace.fr/images/9DB2DFFB-1790-43C6-A695-AC767382BDF4/NW_raw/l-arret-de-bus-en-question-est-situe-rue-robert-guth-photo-dna-juliette-mariage-1567084399.jpg",
-        "etape": [
+        "titre": "Scenario 1",
+        "description": "Description scénario 1",
+        "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/8/2/182c0cf196_50167185_proprietaire-chat-min.jpg",
+        "etapes": [
             {
-                "etape_id": 1,
-                "etape_titre": "Présentation de l'enquète",
-                "etape_status": false,
-                "etape_description": "Cette étape raconte la situation intiale de l'enquête",
-                "plot": [
+                "id": 1,
+                "titre": "Titre Etape 1",
+                "description": "description etape 1",
+                "plots": [
                     {
-                        "plot_id": 1,
-                        "plot_titre": "Histoire 1",
-                        "plot_description": "Histoire 1",
-                        "plot_type": "INTERLUDE",
-                        "brique": [
+                        "id": 1,
+                        "titre": "Titre Plot 1",
+                        "description": "Description plot 1",
+                        "type": "INTERLUDE",
+                        "briques": [
                             {
-                                "brique_id": 1,
-                                "brique_titre": "Texte Histoire 1",
-                                "brique_type": "TEXTE",
-                                "briqueTexte_contenuHtml": "<p>Texte de l'histoire<p>"
+                                "id": 1,
+                                "titre": "Titre Brique 1",
+                                "description": "Decription brique 1",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
                             },
                             {
-                                "brique_id": 1,
-                                "brique_titre": "Image Histoire 1",
-                                "briqueImage_urlImage": "http://url.com",
-                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                                "id": 2,
+                                "titre": "Titre Brique 2",
+                                "description": "Decription brique 2",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 2"
                             }
                         ]
                     },
                     {
-                        "plot_id": 1,
-                        "plot_titre": "Histoire 2",
-                        "plot_description": "Histoire 2",
-                        "plot_type": "INTERLUDE",
-                        "brique": [
+                        "id": 1,
+                        "titre": "Titre Plot 2",
+                        "description": "Descritpion plot 2",
+                        "type": "INTERLUDE",
+                        "briques": [
                             {
-                                "brique_id": 1,
-                                "brique_titre": "Texte Histoire 2",
-                                "brique_type": "TEXTE",
-                                "briqueTexte_contenuHtml": "<p>Texte de l'histoire<p>"
+                                "id": 3,
+                                "titre": "Titre Brique 3",
+                                "description": "Decription brique 3",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
                             },
                             {
-                                "brique_id": 1,
-                                "brique_titre": "Image Histoire 2",
-                                "briqueImage_urlImage": "http://url.com",
-                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                                "id": 4,
+                                "titre": "Titre Brique 4",
+                                "description": "Decription brique 4",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 4"
                             }
                         ]
                     }
                 ]
             },
             {
-                "etape_id": 2,
-                "etape_titre": "Suspect 1",
-                "etape_status": false,
-                "etape_description": "Dans cette étape vous rencontrer le premier suspect",
-                "plot": [
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "plots": [
                     {
-                        "plot_id": 3,
-                        "plot_titre": "Description du suspect",
-                        "plot_description": "Description du suspect",
-                        "plot_type": "INTERLUDE",
-                        "brique": [
+                        "id": 3,
+                        "titre": "Titre Plot 3",
+                        "description": "Description plot 3",
+                        "type": "INTERLUDE",
+                        "briques": [
                             {
-                                "brique_id": 5,
-                                "brique_titre": "Texte Suspect 1",
-                                "brique_type": "TEXTE",
-                                "briqueTexte_contenuHtml": "<p>Texte du suspect 1<p>"
+                                "id": 5,
+                                "titre": "Titre Brique 5",
+                                "description": "Decription brique 5",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
                             },
                             {
-                                "brique_id": 6,
-                                "brique_titre": "Image Suspect 1",
-                                "briqueImage_urlImage": "http://url.com",
-                                "briqueImage_TexteAccessibilite": "descritpion de l'image"
+                                "id": 6,
+                                "titre": "Titre Brique 6",
+                                "description": "Decription brique 6",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 6"
                             }
                         ]
                     },
                     {
-                        "plot_id": 4,
-                        "plot_titre": "Recherche d'indice",
-                        "plot_description": "",
-                        "plot_type": "QUESTION",
-                        "brique": [
+                        "id": 4,
+                        "titre": "Titre Plot 4",
+                        "description": "Descritpion plot 2",
+                        "type": "QUESTION",
+                        "briques": [
                             {
-                                "brique_id": 7,
-                                "brique_titre": "Texte Histoire 2",
-                                "brique_type": "QR"
+                                "id": 7,
+                                "titre": "Titre Brique 7",
+                                "description": "Decription brique 7",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            },
+                            {
+                                "id": 8,
+                                "titre": "Titre Brique 8",
+                                "description": "Decription brique 8",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "titre": "Scenario 2",
+        "description": "Description scénario 2",
+        "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/5/8/858743bb35_50169458_chien-min.jpg",
+        "etapes": [
+            {
+                "id": 1,
+                "titre": "Titre Etape 1",
+                "description": "description etape 1",
+                "plots": [
+                    {
+                        "id": 1,
+                        "titre": "Titre Plot 1",
+                        "description": "Description plot 1",
+                        "type": "INTERLUDE",
+                        "briques": [
+                            {
+                                "id": 1,
+                                "titre": "Titre Brique 1",
+                                "description": "Decription brique 1",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "Titre Brique 2",
+                                "description": "Decription brique 2",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 2"
                             }
                         ]
                     },
                     {
-                        "plot_id": 5,
-                        "plot_titre": "Reponse indice 1",
-                        "plot_description": "",
-                        "plot_type": "REPONSE_JUSTE",
-                        "brique": [
+                        "id": 1,
+                        "titre": "Titre Plot 2",
+                        "description": "Descritpion plot 2",
+                        "type": "INTERLUDE",
+                        "briques": [
                             {
-                                "brique_id": 7,
-                                "brique_titre": "Description indice 1",
-                                "brique_type": "Texte",
-                                "brique_contenuHtml": "<p>Contenu de l'indice<p>"
+                                "id": 3,
+                                "titre": "Titre Brique 3",
+                                "description": "Decription brique 3",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 4,
+                                "titre": "Titre Brique 4",
+                                "description": "Decription brique 4",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "plots": [
+                    {
+                        "id": 3,
+                        "titre": "Titre Plot 3",
+                        "description": "Description plot 3",
+                        "type": "INTERLUDE",
+                        "briques": [
+                            {
+                                "id": 5,
+                                "titre": "Titre Brique 5",
+                                "description": "Decription brique 5",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Texte de l'histoire<p>"
+                            },
+                            {
+                                "id": 6,
+                                "titre": "Titre Brique 6",
+                                "description": "Decription brique 6",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image de la brique 6"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "titre": "Titre Plot 4",
+                        "description": "Descritpion plot 2",
+                        "type": "QUESTION",
+                        "briques": [
+                            {
+                                "id": 7,
+                                "titre": "Titre Brique 7",
+                                "description": "Decription brique 7",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
+                            },
+                            {
+                                "id": 8,
+                                "titre": "Titre Brique 8",
+                                "description": "Decription brique 8",
+                                "type": "TEXTE",
+                                "contenuHtml": "<p>Question<p>"
                             }
                         ]
                     }

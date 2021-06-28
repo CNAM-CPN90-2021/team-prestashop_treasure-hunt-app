@@ -1,12 +1,14 @@
+import { TypeBriqueEnum } from "../enum/typeBrique.enum";
 import { TypePlotEnum } from "../enum/typePlot.enum";
 import { Brique } from "./Brique";
+import { BriqueImage } from "./BriqueImage";
+import { BriqueTexte } from "./BriqueTexte";
 
 export interface Plot {
-
-    plot_id : number;
-    plot_titre : string;
-    plot_description: string;
-    plot_type: TypePlotEnum;
-    brique?:Brique[];
+    id: number;
+    titre: string;
+    description: string;
+    type: string;
+    briques: (BriqueTexte | BriqueImage)[];
 
 }

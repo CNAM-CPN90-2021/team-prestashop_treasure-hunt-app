@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Scenario } from "../interfaces/Scenario";
 import data from "../datas/dataStructureModule.json";
+import { Etape } from "../interfaces/Etape";
+import { Plot } from "../interfaces/Plot";
 
 export const useScenarios = () => {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
@@ -14,14 +16,14 @@ export const useScenarios = () => {
    * Récupère tous les scénarios de l'API
    */
   function getAllScenarios() {
-    fetch("http://localhost:8080/scenarioListJson")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => setScenarios(data));
+    // fetch("http://localhost:8080/scenarioListJson")
+    //   .then((response) => {
+    //     return response.json();
+    //   })
+    //   .then((data) => setScenarios(data));
     // Récupération provisoire de données en dur
-    // console.log(data)
-    // setScenarios(data);
+    console.log(data);
+    setScenarios(data);
   }
 
   /**
@@ -33,7 +35,9 @@ export const useScenarios = () => {
     console.log("id", id);
     let scenarioById: Scenario = {
       id: 0,
-      titre: "default title"
+      titre: "",
+      description: "",
+      etapes: []
     }
     if (scenarios != null) {
       scenarios.find((scenario) => {
