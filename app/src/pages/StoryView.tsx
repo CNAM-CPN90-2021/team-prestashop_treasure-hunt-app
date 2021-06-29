@@ -34,7 +34,7 @@ const StoryView: React.FC<StoryDetailPageProps> = ({ match }) => {
 
                 </Container>
              {/* component PagesFooter  src : component/PagesFooter.tsx */}
-            <PagesFooter hrefButton={`${match.url}/Steps`}  textButton={"Commencer l'enquête"} />
+            <PagesFooter hrefButton={`${match.url}/steps/`}   textButton={"Commencer l'enquête"} />
 
         </IonPage>
     )

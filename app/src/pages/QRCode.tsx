@@ -3,7 +3,7 @@ import { useQRCodeScanner } from "../hooks/useQRCodeScanner";
 
 // this component just for testing QRcode Functionality 
 
-function Entrance() {
+function QRCode() {
   const { startScan } = useQRCodeScanner();
   const [showToast] = useIonToast();
 
@@ -16,7 +16,7 @@ function Entrance() {
           if (result.content === "good_answer") {
             showToast("Bravo, bonne réponse", 2000)
           } else if (result.content === "wrong_answer") {
-            showToast("Eh non, mauvaise réponse", 2000);
+            showToast("Non, mauvaise réponse", 2000);
           } else {
             showToast("Code non reconnu", 2000);
           }
@@ -28,4 +28,4 @@ function Entrance() {
   );
 }
 
-export default Entrance
+export default QRCode

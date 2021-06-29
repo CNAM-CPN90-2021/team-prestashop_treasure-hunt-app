@@ -25,6 +25,7 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import StepsView from "./pages/StepsView";
+import QRCode from "./pages/QRCode";
 
 const App: React.FC = () => (
   <IonApp>
@@ -39,13 +40,16 @@ const App: React.FC = () => (
 
         {/* Route map */}
         <Route path="/map" component={Map}/>
+
+        {/* Route QRCode */}
+        <Route path="/QRCode" component={QRCode}/>
   
 
         {/* Route story-view */}
         <Route path={`/story-view/:id`} component={StoryView} />
 
         {/* Route story-view */}
-        <Route path={`/story-view/:id/Steps`} component={StepsView} />
+        <Route path={`/story-view/:id/Steps/:etapeId`} component={StepsView} />
 
       </IonRouterOutlet>
     </IonReactRouter>
