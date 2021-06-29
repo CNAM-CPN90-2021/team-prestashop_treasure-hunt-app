@@ -15,7 +15,7 @@ import {
   IonLabel,
   IonButton,
 } from "@ionic/react";
-import { BriqueImage } from "../interfaces/BriqueImage";
+import { BriqueImage } from "../../interfaces/BriqueImage";
 
 interface ContainerProps {
   brique: BriqueImage;

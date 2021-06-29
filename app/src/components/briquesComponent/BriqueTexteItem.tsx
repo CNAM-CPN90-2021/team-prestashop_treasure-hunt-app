@@ -15,7 +15,7 @@ import {
   IonLabel,
   IonButton,
 } from "@ionic/react";
-import { BriqueTexte } from "../interfaces/BriqueTexte";
+import { BriqueTexte } from "../../interfaces/BriqueTexte";
 
 interface ContainerProps {
   brique: BriqueTexte;
@@ -28,7 +28,7 @@ const BriqueTexteItem: React.FC<ContainerProps> = ({ brique }) => {
             {brique.description}
           </IonCardSubtitle>
           <IonCardContent>
-            {brique.contenuHtml}
+            {brique.text}
           </IonCardContent>
       </IonCard>
   );

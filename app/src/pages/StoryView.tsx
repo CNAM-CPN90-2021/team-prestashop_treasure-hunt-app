@@ -20,7 +20,7 @@ const StoryView: React.FC<StoryDetailPageProps> = ({ match }) => {
     // filtering the data for display the record by ID
     const { filterById } = useScenarios();
     const currentScenario: Scenario = filterById(parseInt(match.params.id))
-
+    
     return (
         <IonPage>
             {/* component page header src : component/PagesHeader.tsx */}
