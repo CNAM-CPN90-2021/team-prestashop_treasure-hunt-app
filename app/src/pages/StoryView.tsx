@@ -21,6 +21,7 @@ const StoryView: React.FC<StoryDetailPageProps> = ({ match }) => {
     const { filterById } = useScenarios();
     const currentScenario: Scenario = filterById(parseInt(match.params.id))
     
+    
     return (
         <IonPage>
             {/* component page header src : component/PagesHeader.tsx */}
@@ -34,7 +35,7 @@ const StoryView: React.FC<StoryDetailPageProps> = ({ match }) => {
 
                 </Container>
              {/* component PagesFooter  src : component/PagesFooter.tsx */}
-            <PagesFooter hrefButton={`${match.url}/steps/`}   textButton={"Commencer l'enquête"} />
+            <PagesFooter hrefButton={`${match.url}/steps`}  textButton={"Commencer l'enquête"} />
 
         </IonPage>
     )

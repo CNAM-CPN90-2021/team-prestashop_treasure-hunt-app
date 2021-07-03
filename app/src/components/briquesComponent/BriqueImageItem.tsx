@@ -1,4 +1,4 @@
-import "./ScenarioMenuItem.css";
+import "./BriqueImageItem.css";
 import {
   IonContent,
   IonHeader,
