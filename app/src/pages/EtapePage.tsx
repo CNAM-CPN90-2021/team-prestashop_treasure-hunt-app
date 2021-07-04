@@ -26,9 +26,11 @@ const EtapePage: React.FC<EtapePageProps> = ({ match }) => {
         <IonPage>
             <PagesHeader hrefBackButton="/" pageTitle={''} />
 
-            {firstPlot.briques.map((brique) => brique.type === "IMAGE" ? (<BriqueImageItem brique={brique}></BriqueImageItem>) : console.log())}
-            
-            <PagesFooter hrefButton="/maps" textButton="Accédez à la carte" />
+            {firstPlot.briques.map((brique) => brique.type === "IMAGE" ? (<BriqueImageItem key={brique.id} brique={brique}></BriqueImageItem>) : console.log())}
+           
+            {firstPlot.briques.map((brique) => brique.type === "TEXTE" ? (<BriqueTexteItem key={brique.id} brique={brique}></BriqueTexteItem>) : console.log())}
+
+            <PagesFooter hrefButton="/map" textButton="Accédez à la carte" />
 
         </IonPage>
     )
