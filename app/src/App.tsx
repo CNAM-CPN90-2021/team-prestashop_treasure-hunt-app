@@ -1,10 +1,9 @@
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import HomePage from "./pages/HomePage";
 import { Map } from "./pages/Map";
 import ScenariosPage from "./pages/ScenariosPage";
-import StoryView from "./pages/StoryView";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -24,8 +23,9 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import StepsView from "./pages/StepsView";
 import QRCode from "./pages/QRCode";
+import ScenarioDetailPage from "./pages/ScenarioDetailPage";
+import EtapePage from "./pages/EtapePage";
 
 const App: React.FC = () => (
   <IonApp>
@@ -35,10 +35,10 @@ const App: React.FC = () => (
         <Route exact path={["/home", "/"]} component={HomePage} />
         {/* Route scenarios-menu */}
         <Route exact path={`/scenarios`} component={ScenariosPage} />
+        {/* Route to scenario details page */}
+        <Route exact path={`/scenarios/:scenarioId`} component={ScenarioDetailPage} />
         {/* Route story-view */}
-        <Route exact path={`/story-view/:scenarioId`} component={StoryView} />
-        {/* Route story-view */}
-        <Route exact path={`/story-view/:scenarioId/:stepId`} component={StepsView} />
+        <Route exact path={`/scenarios/:scenarioId/:etapeId`} component={EtapePage} />
         {/* Route map */}
         <Route exact path={`/map`} component={Map} />
         {/* Route QRCode */}
