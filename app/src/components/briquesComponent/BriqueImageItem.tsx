@@ -18,7 +18,8 @@ import {
 import { BriqueImage } from "../../interfaces/BriqueImage";
 
 interface ContainerProps {
-  brique: BriqueImage;
+// FIXME: Passage de type any pour résoudre pb typage dans EtapePage.tsx
+  brique: any;
 }
 
 const BriqueImageItem: React.FC<ContainerProps> = ({ brique }) => {
