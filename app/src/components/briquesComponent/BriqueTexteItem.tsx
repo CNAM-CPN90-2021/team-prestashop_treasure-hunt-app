@@ -18,12 +18,12 @@ import {
 import { BriqueTexte } from "../../interfaces/BriqueTexte";
 
 interface ContainerProps {
-  brique: BriqueTexte;
+  brique: any;
 }
 
 const BriqueTexteItem: React.FC<ContainerProps> = ({ brique }) => {
   return (
-      <IonCard class="brique-texte-menu-item" color="tertiary" routerLink={`/story-view/${brique.id}`}>
+      <IonCard class="brique-texte-menu-item" color="tertiary">
           <IonCardSubtitle>
             {brique.description}
           </IonCardSubtitle>
