@@ -10,6 +10,20 @@ import {
 import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useState } from "react";
+import distance from "@turf/distance";
+import { point } from "@turf/helpers";
+
+function measureDistance(from: any, to: any) {
+  if(!from || !to) {
+    return Infinity
+  }
+
+  return distance(
+        point([from.latitude, from.longitude]),
+        point([to.latitude, to.longitude]),
+        { units: "meters" }
+      )
+}
 
 export function Map() {
   const [viewport, setViewport] = useState({
