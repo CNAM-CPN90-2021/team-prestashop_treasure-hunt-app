@@ -2,7 +2,7 @@
     {
     "id": 1,
     "titre": "Scenario 1",
-    "description": "Description scénario 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/8/2/182c0cf196_50167185_proprietaire-chat-min.jpg",
     "etapes": [
         {
@@ -30,7 +30,7 @@
                             "titre": "photo principale",
                             "description": "Decription brique 2",
                             "type": "IMAGE",
-                            "urlImage": "http://url.com",
+                            "urlImage": "https://d3rrv21q7fx9b0.cloudfront.net/m/6edbfe377c40bfc2/LA02_768x400-LA02_69_coulommiers_V2_1.jpg",
                             "texteAccessibilite": "Descritpion de l'image"
                         }
                     ]

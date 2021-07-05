@@ -1,4 +1,4 @@
-import { IonPage } from "@ionic/react"
+import { IonCol, IonGrid, IonPage, IonRow } from "@ionic/react"
 import { RouteComponentProps } from "react-router"
 import BriqueImageItem from "../components/briquesComponent/BriqueImageItem"
 import BriqueTexteItem from "../components/briquesComponent/BriqueTexteItem"
@@ -24,14 +24,25 @@ const EtapePage: React.FC<EtapePageProps> = ({ match }) => {
 
     return (
         <IonPage>
-            <PagesHeader hrefBackButton= {`/scenarios/${match.params.scenarioId}`}  pageTitle={''} />
+            <PagesHeader hrefBackButton= {`/scenarios/${match.params.scenarioId}`}  pageTitle={`Scenario ${scenarioId}`} />
+            <Container>
+                <IonGrid className="container_flex_center">
+                    <IonRow className="ion-align-item-center" >
+                        <IonCol size="12" >
+                            {firstPlot.briques.map((brique) => brique.type === "IMAGE" ? (<BriqueImageItem key={brique.id} brique={brique}></BriqueImageItem>) : console.log())}
+                        </IonCol>
+                    </IonRow>
+                
+                    <IonRow className="ion-align-item-center" >
+                        <IonCol size="12" >
+                            {firstPlot.briques.map((brique) => brique.type === "TEXTE" ? (<BriqueTexteItem key={brique.id} brique={brique}></BriqueTexteItem>) : console.log())}
+                        </IonCol>
+                    </IonRow>
 
-            {firstPlot.briques.map((brique) => brique.type === "IMAGE" ? (<BriqueImageItem key={brique.id} brique={brique}></BriqueImageItem>) : console.log())}
-           
-            {firstPlot.briques.map((brique) => brique.type === "TEXTE" ? (<BriqueTexteItem key={brique.id} brique={brique}></BriqueTexteItem>) : console.log())}
+                </IonGrid>
 
-            <PagesFooter hrefButton={`/scenarios/${scenarioId}/${etapeId}/map`} textButton="Accédez à la carte" />
-
+                <PagesFooter hrefButton={`/scenarios/${scenarioId}/${etapeId}/map`} textButton="Accédez à la carte" />
+            </Container>
         </IonPage>
     )
 }

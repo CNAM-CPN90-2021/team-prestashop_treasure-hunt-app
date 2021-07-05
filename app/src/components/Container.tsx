@@ -5,7 +5,7 @@ import './Container.css';
 
 const Container: React.FC = ({children}) => {
   return (
-    <IonContent>
+    <IonContent fullscreen>
       {children}
     </IonContent>
     

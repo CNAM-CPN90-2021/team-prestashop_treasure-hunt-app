@@ -77,7 +77,7 @@ const Map : React.FC<MapPageProps> = ({match}) => {
         </div>
       </Container>
 
-      <PagesFooter hrefButton="" textButton="" />
+      <PagesFooter hrefButton={`/scenarios/${scenarioId}/${etapeId}/QRCode`} textButton="Vous êtes arrivé !! scanner le QR code" />
     </IonPage>
   );
 }

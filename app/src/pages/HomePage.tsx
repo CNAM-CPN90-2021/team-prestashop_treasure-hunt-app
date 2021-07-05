@@ -2,6 +2,7 @@ import { IonPage ,IonContent , IonImg, IonToolbar } from "@ionic/react";
 import CustomButton from "../components/CustomButton";
 import search from '../images/search.png';
 import './HomePage.css'
+import QRCode from "./QRCode";
 
 const HomePage : React.FC = () => {
 
@@ -14,6 +15,7 @@ const HomePage : React.FC = () => {
             <IonImg className="searchImg" src= {search} alt="search" />
             <h2>Prêt à jouer ?</h2>
             <CustomButton ButtonHref="/scenarios" ButtonText="Voir les scenarios" />
+            <QRCode />
             </div>
         </IonContent>
             <IonToolbar>

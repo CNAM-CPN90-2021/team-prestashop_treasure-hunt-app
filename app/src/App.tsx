@@ -44,7 +44,7 @@ const App: React.FC = () => (
         {/* Route map */}
         <Route exact path={`/scenarios/:scenarioId/:etapeId/map`} component={Map} />
         {/* Route QRCode */}
-        <Route path="/QRCode" component={QRCode} />
+        <Route path="/scenarios/:scenarioId/:etapeId/QRCode" component={QRCode} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

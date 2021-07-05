@@ -23,10 +23,10 @@ interface ContainerProps {
 
 const BriqueTexteItem: React.FC<ContainerProps> = ({ brique }) => {
   return (
-      <IonCard class="brique-texte-menu-item" color="tertiary">
-          <IonCardSubtitle>
+      <IonCard class="brique-texte-menu-item" >
+          {/* <IonCardSubtitle>
             {brique.description}
-          </IonCardSubtitle>
+          </IonCardSubtitle> */}
           <IonCardContent>
             {brique.text}
           </IonCardContent>

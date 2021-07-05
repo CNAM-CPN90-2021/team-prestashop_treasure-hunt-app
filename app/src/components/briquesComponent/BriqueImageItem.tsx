@@ -24,7 +24,7 @@ interface ContainerProps {
 
 const BriqueImageItem: React.FC<ContainerProps> = ({ brique }) => {
   return (
-      <IonCard class="brique-image-menu-item" color="tertiary">
+      <IonCard class="brique-image-menu-item" >
         <img src={brique.urlImage} alt={brique.texteAccessibilite} />
       </IonCard>
   );
