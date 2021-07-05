@@ -73,7 +73,7 @@ async function startScan() {
   const { BarcodeScanner } = Plugins;
 
   BarcodeScanner.hideBackground(); // make background of WebView transparent
-  document.body.style.setProperty("opacity", 0.1);
+  document.body.style.setProperty("opacity", 0);
 
   const granted = await didUserGrantPermission();
   if (!granted) {
