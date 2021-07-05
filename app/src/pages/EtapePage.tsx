@@ -24,13 +24,13 @@ const EtapePage: React.FC<EtapePageProps> = ({ match }) => {
 
     return (
         <IonPage>
-            <PagesHeader hrefBackButton="/" pageTitle={''} />
+            <PagesHeader hrefBackButton= {`/scenarios/${match.params.scenarioId}`}  pageTitle={''} />
 
             {firstPlot.briques.map((brique) => brique.type === "IMAGE" ? (<BriqueImageItem key={brique.id} brique={brique}></BriqueImageItem>) : console.log())}
            
             {firstPlot.briques.map((brique) => brique.type === "TEXTE" ? (<BriqueTexteItem key={brique.id} brique={brique}></BriqueTexteItem>) : console.log())}
 
-            <PagesFooter hrefButton="/map" textButton="Accédez à la carte" />
+            <PagesFooter hrefButton={`/scenarios/${scenarioId}/${etapeId}/map`} textButton="Accédez à la carte" />
 
         </IonPage>
     )

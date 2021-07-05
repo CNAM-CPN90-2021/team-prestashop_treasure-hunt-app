@@ -15,7 +15,8 @@ interface ScenarioDetailPageProps extends RouteComponentProps<{
 const ScenarioDetailPage: React.FC<ScenarioDetailPageProps> = ({ match }) => {
 
     const { filterById, getFirstEtape } = useScenarios();
-    const scenario: Scenario = filterById(parseInt(match.params.scenarioId))
+    const scenarioId: number = parseInt(match.params.scenarioId)
+    const scenario: Scenario = filterById(scenarioId)
     const firstEtape: Etape = getFirstEtape(scenario.id)
 
     console.log("firstEtape", firstEtape);
@@ -23,7 +24,7 @@ const ScenarioDetailPage: React.FC<ScenarioDetailPageProps> = ({ match }) => {
     return (
         <IonPage>
             {/* component page header src : component/PagesHeader.tsx */}
-            <PagesHeader pageTitle={scenario.titre} hrefBackButton="/scenarios" />
+            <PagesHeader pageTitle={scenario.titre} hrefBackButton={`/scenarios`} />
 
             {/* component container  src : component/Container.tsx */}
             <Container>

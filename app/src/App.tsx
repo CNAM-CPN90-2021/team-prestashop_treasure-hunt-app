@@ -1,9 +1,6 @@
 import { Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import HomePage from "./pages/HomePage";
-import { Map } from "./pages/Map";
-import ScenariosPage from "./pages/ScenariosPage";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -23,6 +20,11 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+
+
+import HomePage from "./pages/HomePage";
+import Map  from "./pages/Map";
+import ScenariosPage from "./pages/ScenariosPage";
 import QRCode from "./pages/QRCode";
 import ScenarioDetailPage from "./pages/ScenarioDetailPage";
 import EtapePage from "./pages/EtapePage";
@@ -40,7 +42,7 @@ const App: React.FC = () => (
         {/* Route story-view */}
         <Route exact path={`/scenarios/:scenarioId/:etapeId`} component={EtapePage} />
         {/* Route map */}
-        <Route exact path={`/map`} component={Map} />
+        <Route exact path={`/scenarios/:scenarioId/:etapeId/map`} component={Map} />
         {/* Route QRCode */}
         <Route path="/QRCode" component={QRCode} />
       </IonRouterOutlet>

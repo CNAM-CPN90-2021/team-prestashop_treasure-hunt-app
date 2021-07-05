@@ -10,26 +10,31 @@ import {
 import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useState } from "react";
+import PagesHeader from "../components/PagesHeader";
+import Container from "../components/Container";
+import PagesFooter from "../components/PagesFooter";
+import { RouteComponentProps } from "react-router-dom";
 
-export function Map() {
+interface MapPageProps extends RouteComponentProps<{
+  scenarioId: string;
+  etapeId: string;
+}> { }
+
+const Map : React.FC<MapPageProps> = ({match}) => {
+  const { scenarioId, etapeId } = match.params
+
   const [viewport, setViewport] = useState({
     latitude: 47.7395389333945,
     longitude: 7.329169414309033,
     zoom: 12,
   });
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonButtons slot="start">
-            <IonBackButton />
-          </IonButtons>
-          <IonTitle>Une super carte</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+  <IonPage>
 
-      <IonContent fullscreen>
-        <div style={{ width: "100%", height: "80vh" }}>
+    <PagesHeader pageTitle="Carte" hrefBackButton={`/scenarios/${scenarioId}/${etapeId}`} />
+
+      <Container>
+        <div style={{ width: "100%", height: "90vh" }}>
           <ReactMapGL
             {...viewport}
             onViewportChange={(nextViewport: any) => setViewport(nextViewport)}
@@ -70,7 +75,11 @@ export function Map() {
             </Marker>
           </ReactMapGL>
         </div>
-      </IonContent>
+      </Container>
+
+      <PagesFooter hrefButton="" textButton="" />
     </IonPage>
   );
 }
+
+export default Map
