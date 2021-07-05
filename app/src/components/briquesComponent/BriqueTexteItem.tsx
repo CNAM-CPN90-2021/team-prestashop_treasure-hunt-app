@@ -25,7 +25,7 @@ const BriqueTexteItem: React.FC<ContainerProps> = ({ brique }) => {
   return (
       <IonCard class="brique-texte-menu-item" color="tertiary">
           <IonCardSubtitle>
-            {brique.description}
+            {brique.titre}
           </IonCardSubtitle>
           <IonCardContent>
             {brique.text}
