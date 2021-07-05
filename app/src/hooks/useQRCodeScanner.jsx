@@ -1,7 +1,9 @@
 
 import { Plugins } from "@capacitor/core";
 import { getPlatforms, isPlatform } from "@ionic/react";
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
+
+
 
 async function didUserGrantPermission() {
   const { BarcodeScanner } = Plugins;
@@ -12,7 +14,7 @@ async function didUserGrantPermission() {
     // user granted permission
     return true;
   }
-  
+
   if (status.denied) {
     // user denied permission
     return false;
@@ -69,21 +71,27 @@ function prepare() {
   BarcodeScanner.prepare();
 }
 
+// export function active(bool){
+//   return bool
+// }
+
 async function startScan() {
   const { BarcodeScanner } = Plugins;
 
-  BarcodeScanner.hideBackground(); // make background of WebView transparent
-  document.body.style.setProperty("opacity", 0);
+  // BarcodeScanner.hideBackground(); // make background of WebView transparent
+  // document.body.style.setProperty("opacity", 0.1);
+  // active(true)
 
   const granted = await didUserGrantPermission();
   if (!granted) {
     window.alert(
       "Merci d'autoriser l'accès à la caméra pour scanner des qr codes"
     );
+    // active(false)
     return { hasContent: false };
   }
   const result = await BarcodeScanner.startScan(); // start scanning and wait for a result
-  document.body.style.setProperty("opacity", 1);
+  // document.body.style.setProperty("opacity", 1);
   return result;
 }
 
@@ -93,8 +101,9 @@ function stopScan() {
   }
 
   const { BarcodeScanner } = Plugins;
-  BarcodeScanner.showBackground();
-  document.body.style.setProperty("opacity", 1);
+  // BarcodeScanner.showBackground();
+  // document.body.style.setProperty("opacity", 1);
+  // active(false)
   BarcodeScanner.stopScan();
 }
 
@@ -110,5 +119,6 @@ export function useQRCodeScanner() {
   return {
     startScan,
     stopScan,
+    // active
   };
-}
+} 
