@@ -9,18 +9,34 @@ import {
 } from "@ionic/react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import distance from "@turf/distance";
+import { point } from "@turf/helpers";
 import PagesHeader from "../components/PagesHeader";
 import Container from "../components/Container";
 import PagesFooter from "../components/PagesFooter";
 import { RouteComponentProps } from "react-router-dom";
+import { useSimulatedPosition } from "../hooks/useSimulatedPosition";
+import { useRealPosition } from "../hooks/useRealPosition";
+
+// function measureDistance(from: any, to: any) {
+//   if (!from || !to) {
+//     return Infinity
+//   }
+
+//   return distance(
+//     point([from.latitude, from.longitude]),
+//     point([to.latitude, to.longitude]),
+//     { units: "meters" }
+//   )
+// }
 
 interface MapPageProps extends RouteComponentProps<{
   scenarioId: string;
   etapeId: string;
 }> { }
 
-const Map : React.FC<MapPageProps> = ({match}) => {
+const Map: React.FC<MapPageProps> = ({ match }) => {
   const { scenarioId, etapeId } = match.params
 
   const [viewport, setViewport] = useState({
@@ -28,12 +44,20 @@ const Map : React.FC<MapPageProps> = ({match}) => {
     longitude: 7.329169414309033,
     zoom: 12,
   });
-  return (
-  <IonPage>
 
-    <PagesHeader pageTitle="Carte" hrefBackButton={`/scenarios/${scenarioId}/${etapeId}`} />
+  // const position = useRealPosition();
+
+  const simulatedPosition = useSimulatedPosition();
+
+  // const distanceToDestination = measureDistance([simulatedPosition.latitude, simulatedPosition.longitude], [47.7395389333945, 7.329169414309033])
+
+  return (
+    <IonPage>
+
+      <PagesHeader pageTitle="Carte" hrefBackButton={`/scenarios/${scenarioId}/${etapeId}`} />
 
       <Container>
+        {/* <IonTitle>{distanceToDestination}</IonTitle> */}
         <div style={{ width: "100%", height: "90vh" }}>
           <ReactMapGL
             {...viewport}
@@ -41,12 +65,12 @@ const Map : React.FC<MapPageProps> = ({match}) => {
             width="100%"
             height="100%"
           >
-            <Marker 
-              latitude={47.7395389333945} 
+            <Marker
+              latitude={47.7395389333945}
               longitude={7.329169414309033}
-              offsetLeft={(-1 * 40) /2}
-              offsetTop={(-1 * 40) /2}
-              >
+              offsetLeft={(-1 * 40) / 2}
+              offsetTop={(-1 * 40) / 2}
+            >
               <div
                 style={{
                   background: "red",
@@ -56,12 +80,12 @@ const Map : React.FC<MapPageProps> = ({match}) => {
                 }}
               ></div>
             </Marker>
-            <Marker 
-              latitude={47.745} 
-              longitude={7.33}
-              offsetLeft={(-1 * 40) /2}
-              offsetTop={(-1 * 40) /2}
-              >
+            <Marker
+              latitude={/*position && position.latitude ? position.latitude :*/ simulatedPosition.latitude}
+              longitude={/*position && position.longitude ? position.longitude : */simulatedPosition.longitude}
+              offsetLeft={(-1 * 30) / 2}
+              offsetTop={(-1 * 30) / 2}
+            >
               <div
                 style={{
                   background: "blue",

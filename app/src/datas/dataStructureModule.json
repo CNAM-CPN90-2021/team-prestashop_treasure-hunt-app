@@ -1,26 +1,348 @@
-[
-    {
-    "id": 1,
-    "titre": "Scenario 1",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/8/2/182c0cf196_50167185_proprietaire-chat-min.jpg",
-    "etapes": [
-        {
-            "id": 1,
-            "titre": "presentation",
-            "description": "description etape 1",
-            "status" : false,
-            "plots": [
-                {
+[{
+        "id": 1,
+        "titre": "Cat distress",
+        "description": "Cette aventure met en scène André, un chat comme les autres. Vous suivrez ses périgrinations depuis le canapé du salon jusq'à sa gamelle dans la cuisine, en passant par l'étonnant dédale qui mène à la moquette de la chambre à coucher pour faire ses griffes",
+        "imageUrl": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/8/2/182c0cf196_50167185_proprietaire-chat-min.jpg",
+        "etapes": [{
+                "id": 1,
+                "titre": "presentation",
+                "description": "description etape 1",
+                "status": false,
+                "plots": [{
                     "id": 1,
                     "titre": "presentation",
                     "description": "presentation l'histoire",
                     "type": "PRESENTATION",
-                    "status" : false,
-                    "briques": [
-                        {
+                    "status": false,
+                    "briques": [{
                             "id": 1,
-                            "titre": "Titre de l'histoir",
+                            "titre": "La journée commence",
+                            "description": "",
+                            "type": "TEXTE",
+                            "text": "Après une nuit à dormir, André se lève avec l'envie irrépressible de faire le tour du paté de maison."
+                        },
+                        {
+                            "id": 2,
+                            "titre": "photo principale",
+                            "description": "Decription brique 2",
+                            "type": "IMAGE",
+                            "urlImage": "https://www.18h39.fr/wp-content/uploads/2019/04/chat-trop-chou-600x420.jpg",
+                            "texteAccessibilite": "Descritpion de l'image"
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "status": false,
+                "plots": [{
+                        "id": 1,
+                        "titre": "presentation",
+                        "description": "presentation l'histoire",
+                        "type": "SUSPECT",
+                        "status": false,
+                        "briques": [{
+                                "id": 1,
+                                "titre": "suspect 1",
+                                "description": "Decription suspect 1",
+                                "type": "Nom",
+                                "text": "Nom de suspect"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "presentation suspect 1",
+                                "description": "Decription suspect 1",
+                                "type": "TEXTE",
+                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum, temporibus libero delectus facere doloremque iure velit porro blanditiis nobis a, iste quod error dolor illum tempore est. Molestias, dolor."
+                            },
+                            {
+                                "id": 3,
+                                "titre": "photo suspect 1",
+                                "description": "photo suspect 1",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "titre": "1ere plot ",
+                        "description": "ce plot va s'afficher en preimier",
+                        "type": "COMMENCER",
+                        "status": false,
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QUESTION",
+                                "question": "Qui a mangé le fromage ?",
+                                "reponse": "Mouafak"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "titre": "2eme plot ",
+                        "description": "ce plot va s'afficher aprés le plot1",
+                        "status": false,
+                        "type": "CONTINUATION",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QRCODE",
+                                "text": "Trouvez le QR code et scannez-le ",
+                                "scanneResultat": "ReponseQRCodeN1"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "titre": "dernier plot ",
+                        "description": "ce plot va s'afficher en dernier",
+                        "status": false,
+                        "type": "TERMINAISON",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QRCODE",
+                                "text": "Trouvez le QR code et scannez-le ",
+                                "scanneResultat": "ReponseQRCodeN1"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "titre": "Squirrel Panik",
+        "description": "C'est l'hiver dans quelques jours et les réserves de nourriture de Sylvain et Martial sont presque vides. Aidez les a remplir leur garde manger avant que le gèle ne s'abatte sur la région !",
+        "imageUrl": "https://img.maxisciences.com/s3/frgsd/animal/default_2021-03-12_15ac6533-173b-46fd-8eba-86c3d1b96fe4.jpeg",
+        "etapes": [{
+                "id": 1,
+                "titre": "presentation",
+                "description": "description etape 1",
+                "status": false,
+                "plots": [{
+                    "id": 1,
+                    "titre": "presentation",
+                    "description": "presentation l'histoire",
+                    "type": "PRESENTATION",
+                    "status": false,
+                    "briques": [{
+                            "id": 1,
+                            "titre": "Les derniers préparatifs...",
+                            "description": "",
+                            "type": "TEXTE",
+                            "text": "L'Automne bat sont plein. la température est plutôt douce pour la saison et pourtant ... Dans la forêt, nombre de ses habitants s'affairent. Au milieu de cette agitation Sylvain est perplexe. La seule chose qui l'intéresse est de retrouver son ami Martial"
+                        },
+                        {
+                            "id": 2,
+                            "titre": "photo principale",
+                            "description": "Decription brique 2",
+                            "type": "IMAGE",
+                            "urlImage": "https://images.photowall.com/products/66639/red-squirrel-with-autumn-colors.jpg?h=699&q=85",
+                            "texteAccessibilite": "Descritpion de l'image"
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "status": false,
+                "plots": [{
+                        "id": 1,
+                        "titre": "presentation",
+                        "description": "presentation l'histoire",
+                        "type": "SUSPECT",
+                        "status": false,
+                        "briques": [{
+                                "id": 1,
+                                "titre": "suspect 1",
+                                "description": "Decription suspect 1",
+                                "type": "Nom",
+                                "text": "Nom de suspect"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "presentation suspect 1",
+                                "description": "Decription suspect 1",
+                                "type": "TEXTE",
+                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum, temporibus libero delectus facere doloremque iure velit porro blanditiis nobis a, iste quod error dolor illum tempore est. Molestias, dolor."
+                            },
+                            {
+                                "id": 3,
+                                "titre": "photo suspect 1",
+                                "description": "photo suspect 1",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "titre": "1ere plot ",
+                        "description": "ce plot va s'afficher en preimier",
+                        "type": "COMMENCER",
+                        "status": false,
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QUESTION",
+                                "question": "Qui a mangé le fromage ?",
+                                "reponse": "Mouafak"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "titre": "2eme plot ",
+                        "description": "ce plot va s'afficher aprés le plot1",
+                        "status": false,
+                        "type": "CONTINUATION",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QRCODE",
+                                "text": "Trouvez le QR code et scannez-le ",
+                                "scanneResultat": "ReponseQRCodeN1"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "titre": "dernier plot ",
+                        "description": "ce plot va s'afficher en dernier",
+                        "status": false,
+                        "type": "TERMINAISON",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QRCODE",
+                                "text": "Trouvez le QR code et scannez-le ",
+                                "scanneResultat": "ReponseQRCodeN1"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "titre": "Dog anguish",
+        "description": "Pataplon est heureux. Enfin il devrait l'être. Il a tout dans la vie : de la pâté quand il a faim, un maître aimant, un panier douillet. Et pourtant Pataplon éprouve depuis peu des sentiments complexes qui lui font se poser des questions inhabituelles.",
+        "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F10%2F13%2Fcorgi-dog-POPDOGNAME1020.jpg",
+        "etapes": [{
+                "id": 1,
+                "titre": "presentation",
+                "description": "description etape 1",
+                "status": false,
+                "plots": [{
+                    "id": 1,
+                    "titre": "presentation",
+                    "description": "presentation l'histoire",
+                    "type": "PRESENTATION",
+                    "status": false,
+                    "briques": [{
+                            "id": 1,
+                            "titre": "Titre de l'histoire",
                             "description": "Decription brique 1",
                             "type": "TEXTE",
                             "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum, temporibus libero delectus facere doloremque iure velit porro blanditiis nobis a, iste quod error dolor illum tempore est. Molestias, dolor."
@@ -30,154 +352,139 @@
                             "titre": "photo principale",
                             "description": "Decription brique 2",
                             "type": "IMAGE",
-                            "urlImage": "https://d3rrv21q7fx9b0.cloudfront.net/m/6edbfe377c40bfc2/LA02_768x400-LA02_69_coulommiers_V2_1.jpg",
+                            "urlImage": "https://www.18h39.fr/wp-content/uploads/2019/04/chat-trop-chou-600x420.jpg",
                             "texteAccessibilite": "Descritpion de l'image"
                         }
                     ]
-                }
-
-            ]
-        },
-
-
-        {
-            "id": 2,
-            "titre": "Titre Etape 2",
-            "description": "description etape 2",
-            "status" : false,
-            "plots": [
-                {
-                    "id": 1,
-                    "titre": "presentation",
-                    "description": "presentation l'histoire",
-                    "type": "SUSPECT",
-                    "status" : false,
-                    "briques": [
-                        {
-                            "id": 1,
-                            "titre": "suspect 1",
-                            "description": "Decription suspect 1",
-                            "type": "Nom",
-                            "text": "Nom de suspect"
-                        },
-
-                        {
-                            "id": 2,
-                            "titre": "presentation suspect 1",
-                            "description": "Decription suspect 1",
-                            "type": "TEXTE",
-                            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum, temporibus libero delectus facere doloremque iure velit porro blanditiis nobis a, iste quod error dolor illum tempore est. Molestias, dolor."
-                        },
-                        {
-                            "id": 3,
-                            "titre": "photo suspect 1",
-                            "description": "photo suspect 1",
-                            "type": "IMAGE",
-                            "urlImage": "http://url.com",
-                            "texteAccessibilite": "Descritpion de l'image"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "titre": "1ere plot ",
-                    "description": "ce plot va s'afficher en preimier",
-                    "type": "COMMENCER",
-                    "status" : false,
-                    "briques": [
-                        {
-                            "id": 1,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "QUESTION",
-                            "question": "Qui a mangé le fromage ?",
-                            "reponse" : "Mouafak"
-                        },
-                        {
-                            "id": 2,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "BONNEREPONSE",
-                            "text": "Bravo"
-                        },
-                        {
-                            "id": 1,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "MAUVAISEREPONSE",
-                            "text": "Dommage ,vas-y , essaye encore une fois"
-                        }   
-
-                    ]
-                },
-                {
-                    "id": 2,
-                    "titre": "2eme plot ",
-                    "description": "ce plot va s'afficher aprés le plot1",
-                    "status" : false,
-                    "type": "CONTINUATION",
-                    "briques": [
-                        {
-                            "id": 1,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "QRCODE",
-                            "text": "Trouvez le QR code et scannez-le ",
-                            "scanneResultat" : "ReponseQRCodeN1"
-                        },
-                        {
-                            "id": 2,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "BONNEREPONSE",
-                            "text": "Bravo"
-                        },
-                        {
-                            "id": 1,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "MAUVAISEREPONSE",
-                            "text": "Dommage ,vas-y , essaye encore une fois"
-                        }   
-
-                    ]
-                },
-
-                {
-                    "id": 3,
-                    "titre": "dernier plot ",
-                    "description": "ce plot va s'afficher en dernier",
-                    "status" :false,
-                    "type": "TERMINAISON",
-                    "briques": [
-
-                        {
-                            "id": 1,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "QRCODE",
-                            "text": "Trouvez le QR code et scannez-le ",
-                            "scanneResultat" : "ReponseQRCodeN1"
-                        },
-                        {
-                            "id": 2,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "BONNEREPONSE",
-                            "text": "Bravo"
-                        },
-                        {
-                            "id": 1,
-                            "titre": "",
-                            "description": "Decription brique 3",
-                            "type": "MAUVAISEREPONSE",
-                            "text": "Dommage ,vas-y , essaye encore une fois"
-                        } 
-
-                    ]
-                }
-            ]
-        }
-    ]
+                }]
+            },
+            {
+                "id": 2,
+                "titre": "Titre Etape 2",
+                "description": "description etape 2",
+                "status": false,
+                "plots": [{
+                        "id": 1,
+                        "titre": "presentation",
+                        "description": "presentation l'histoire",
+                        "type": "SUSPECT",
+                        "status": false,
+                        "briques": [{
+                                "id": 1,
+                                "titre": "suspect 1",
+                                "description": "Decription suspect 1",
+                                "type": "Nom",
+                                "text": "Nom de suspect"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "presentation suspect 1",
+                                "description": "Decription suspect 1",
+                                "type": "TEXTE",
+                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum, temporibus libero delectus facere doloremque iure velit porro blanditiis nobis a, iste quod error dolor illum tempore est. Molestias, dolor."
+                            },
+                            {
+                                "id": 3,
+                                "titre": "photo suspect 1",
+                                "description": "photo suspect 1",
+                                "type": "IMAGE",
+                                "urlImage": "http://url.com",
+                                "texteAccessibilite": "Descritpion de l'image"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "titre": "1ere plot ",
+                        "description": "ce plot va s'afficher en preimier",
+                        "type": "COMMENCER",
+                        "status": false,
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QUESTION",
+                                "question": "Qui a mangé le fromage ?",
+                                "reponse": "Mouafak"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "titre": "2eme plot ",
+                        "description": "ce plot va s'afficher aprés le plot1",
+                        "status": false,
+                        "type": "CONTINUATION",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QRCODE",
+                                "text": "Trouvez le QR code et scannez-le ",
+                                "scanneResultat": "ReponseQRCodeN1"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "titre": "dernier plot ",
+                        "description": "ce plot va s'afficher en dernier",
+                        "status": false,
+                        "type": "TERMINAISON",
+                        "briques": [{
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "QRCODE",
+                                "text": "Trouvez le QR code et scannez-le ",
+                                "scanneResultat": "ReponseQRCodeN1"
+                            },
+                            {
+                                "id": 2,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "BONNEREPONSE",
+                                "text": "Bravo"
+                            },
+                            {
+                                "id": 1,
+                                "titre": "",
+                                "description": "Decription brique 3",
+                                "type": "MAUVAISEREPONSE",
+                                "text": "Dommage ,vas-y , essaye encore une fois"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]
