@@ -48,7 +48,7 @@ function QRCode() {
     </IonToolbar>
 
     <IonToolbar  className={resultat ? "visible footer " : "hidden footer"} >
-               <CustomButton  ButtonHref="/scenarios" ButtonText = "Commencer un autre scenario" />
+               <CustomButton  buttonHref="/scenarios" buttonText = "Commencer un autre scenario" />
     </IonToolbar>
     {/* </PagesFooter> */}
 
