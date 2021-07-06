@@ -14,7 +14,7 @@ const HomePage : React.FC = () => {
             <div className="container_flex_center">
             <IonImg className="searchImg" src= {search} alt="search" />
             <h2>Prêt à jouer ?</h2>
-            <CustomButton ButtonHref="/scenarios" ButtonText="Voir les scenarios" />
+            <CustomButton buttonHref="/scenarios" buttonText="Voir les scenarios" />
             <QRCode />
             </div>
         </IonContent>
