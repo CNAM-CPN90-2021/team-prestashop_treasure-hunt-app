@@ -19,17 +19,17 @@ import { RouteComponentProps } from "react-router-dom";
 import { useSimulatedPosition } from "../hooks/useSimulatedPosition";
 import { useRealPosition } from "../hooks/useRealPosition";
 
-// function measureDistance(from: any, to: any) {
-//   if (!from || !to) {
-//     return Infinity
-//   }
+function measureDistance(from: any, to: any) {
+  if (!from || !to) {
+    return Infinity
+  }
 
-//   return distance(
-//     point([from.latitude, from.longitude]),
-//     point([to.latitude, to.longitude]),
-//     { units: "meters" }
-//   )
-// }
+  return distance(
+    point([from.latitude, from.longitude]),
+    point([to.latitude, to.longitude]),
+    { units: "meters" }
+  )
+}
 
 interface MapPageProps extends RouteComponentProps<{
   scenarioId: string;
@@ -49,7 +49,7 @@ const Map: React.FC<MapPageProps> = ({ match }) => {
 
   const simulatedPosition = useSimulatedPosition();
 
-  // const distanceToDestination = measureDistance([simulatedPosition.latitude, simulatedPosition.longitude], [47.7395389333945, 7.329169414309033])
+  const distanceToDestination = measureDistance(simulatedPosition, { latitude: 47.7395389333945, longitude: 7.329169414309033 })
 
   return (
     <IonPage>
@@ -57,7 +57,6 @@ const Map: React.FC<MapPageProps> = ({ match }) => {
       <PagesHeader pageTitle="Carte" hrefBackButton={`/scenarios/${scenarioId}/${etapeId}`} />
 
       <Container>
-        {/* <IonTitle>{distanceToDestination}</IonTitle> */}
         <div style={{ width: "100%", height: "90vh" }}>
           <ReactMapGL
             {...viewport}
@@ -101,7 +100,14 @@ const Map: React.FC<MapPageProps> = ({ match }) => {
         </div>
       </Container>
 
-      <PagesFooter hrefButton={`/scenarios/${scenarioId}/${etapeId}/QRCode`} textButton="Vous êtes arrivé !! scanner le QR code" />
+
+      <PagesFooter
+        hrefButton={`/scenarios/${scenarioId}/${etapeId}/QRCode`}
+        disabledButton={distanceToDestination > 50}
+        textButton={distanceToDestination > 50
+          ? `${Math.round(distanceToDestination)} mètres` : "Scannez le QR code"} />
+
+
     </IonPage>
   );
 }
