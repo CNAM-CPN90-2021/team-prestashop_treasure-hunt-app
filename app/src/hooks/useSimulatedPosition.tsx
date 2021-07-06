@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 export const useSimulatedPosition = () => {
-  const from = { latitude: 47.7426476, longitude: 7.3407563 };
-  const to = { latitude: 47.7386289, longitude: 7.3293385 };
-  const speed = 0.02; // from 0 to 1
+  const from = { latitude: 47.7526476, longitude: 7.3407563 };
+  const to = { latitude: 47.7395389333945, longitude: 7.329169414309033 };
+  const speed = 0.01; // from 0 to 1
   const refresh = 50; // ms
 
   const [currentPosition, setPosition] = useState(from);
