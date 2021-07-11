@@ -9,7 +9,7 @@ interface customButtonInterface {
 const CustomButton: React.FC<customButtonInterface> = ({ buttonHref, buttonText, disabled }) => {
     return (
 
-        <IonButton size="default" color="success" fill="solid" href={buttonHref} disabled={disabled}>
+        <IonButton size="default" color="success" fill="solid" routerLink={buttonHref} disabled={disabled}>
             {buttonText}
         </IonButton>
 
