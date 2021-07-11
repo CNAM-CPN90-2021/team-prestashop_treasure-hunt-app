@@ -17,7 +17,7 @@ const PagesFooter: React.FC<pagesFooter> = ({ hrefButton, textButton, disabledBu
                         <IonCol>
                             {/* component CustomButton src : component/CustomButton.tsx */}
 
-                            {textButton !== "" && hrefButton !== "" ?
+                            {(textButton && hrefButton) ?
                                 <CustomButton buttonHref={hrefButton} buttonText={textButton} disabled={disabledButton ? disabledButton : false}/>
                                 : null
                             }
